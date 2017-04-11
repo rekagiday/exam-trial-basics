@@ -16,7 +16,6 @@ public class CountAs {
     int counter = 0;
     try {
       List<String> lines = Files.readAllLines(path);
-
       for (String line : lines) {
         String[] letters = line.split("");
         for (String letter : letters) {
@@ -38,3 +37,4 @@ public class CountAs {
     text.countA("countas/afile.txt");
   }
 }
+
