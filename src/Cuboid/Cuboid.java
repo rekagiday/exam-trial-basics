@@ -17,14 +17,16 @@ public class Cuboid {
     this.depth = depth;
   }
 
-  private void calculateVolume() {
+  private int calculateVolume() {
     volume = height * length * depth;
     System.out.println("The volume of your cuboid is: " + volume);
+    return volume;
   }
 
-  private void calculateSurface() {
+  private int calculateSurface() {
     surface = ((height * length) + (height * depth) + (length * depth)) * 2;
     System.out.println("The surface of your cuboid is: " + surface);
+    return surface;
   }
 
   public static void main(String[] args) {
