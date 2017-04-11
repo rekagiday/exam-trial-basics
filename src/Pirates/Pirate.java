@@ -14,4 +14,8 @@ public class Pirate {
     this.hasWoodenLeg = hasWoodenLeg;
     this.gold = gold;
   }
+
+  public String getName() {
+    return name;
+  }
 }

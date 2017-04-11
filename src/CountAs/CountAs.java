@@ -37,4 +37,3 @@ public class CountAs {
     text.countA("countas/afile.txt");
   }
 }
-

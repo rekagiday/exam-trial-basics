@@ -8,11 +8,11 @@ import java.util.*;
 
 public class PirateCounter {
 
-  static List<Pirate> countPirates(List<Pirate> listOfPirates) {
-    List<Pirate> selectedPirates = new ArrayList<>();
+  static List<String> countPirates(List<Pirate> listOfPirates) {
+    List<String> selectedPirates = new ArrayList<>();
     for (Pirate pirate : listOfPirates) {
       if (pirate.hasWoodenLeg && pirate.gold > 15) {
-        selectedPirates.add(pirate);
+        selectedPirates.add(pirate.name);
       }
     }
     return selectedPirates;
