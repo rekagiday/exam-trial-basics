@@ -32,4 +32,5 @@ The application is accepted if:
 ## 5. Question time! (~15 mins) [2p]
 
 ### How can you generate a random number? [2p]
-#### Your answer: [add your answer here]
+#### Your answer: To generate a random int number, you have to take the Math.random() method and cast it to int like this : (int) Math.random() To set a max value for it eg. 100, you have to multiply the expression like this: (int) (Math.random() * 100). If you want to set a min value for the random range other than 1, eg 50, you have to add that number to the expression, like this: (int) ((Math.random() * 100) + 50).
+
