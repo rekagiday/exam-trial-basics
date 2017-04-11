@@ -14,12 +14,10 @@ public class Seconds {
 
   public List<Integer> secondNumbers(List<Integer> list) {
     List<Integer> secondList = new ArrayList<>();
-    list.add(1);
-    list.add(2);
-    list.add(3);
-    list.add(4);
-    list.add(5);
-    list.add(6);
+
+    for (int i = 1; i < 20; i++) {
+      list.add(i);
+    }
     for (int i = 0; i < list.size(); i++) {
       if (i % 2 == 1) {
         secondList.add(list.get(i));
@@ -31,9 +29,9 @@ public class Seconds {
 
   public static void main(String[] args) {
 
-    List<Integer> mylist = new ArrayList<>();
-    Seconds list = new Seconds(mylist);
-    list.secondNumbers(mylist);
+    List<Integer> myList = new ArrayList<>();
+    Seconds list = new Seconds(myList);
+    list.secondNumbers(myList);
   }
 }
 
