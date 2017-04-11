@@ -20,7 +20,7 @@ public class CountAs {
       for (String line : lines) {
         String[] letters = line.split("");
         for (String letter : letters) {
-          if (letter.contains("a")) {
+          if (letter.contains("a") || letter.contains("A")) {
             counter++;
           }
         }
